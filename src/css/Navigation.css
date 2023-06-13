@@ -1,0 +1,56 @@
+.navigation {
+    color: var(--MediumGray);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+
+.menu {
+    width: 60vw;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: var(--AlmostWhite);
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 2;
+    line-height: 2rem;
+}
+
+.nobg {
+    background-color: transparent;
+}
+
+.close {
+    display: none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+
+ul > li {
+    list-style: none;
+  
+}
+
+.dropicons {
+    margin-right: 0.5rem;
+}
+
+
+.signin {
+    text-align: center;
+}
+
+.register {
+    border: 2px solid var(--MediumGray);
+    border-radius: 0.5rem;
+}

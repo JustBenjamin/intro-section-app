@@ -8,7 +8,7 @@ import maker from "./images/client-maker.svg";
 
 export default function Header() {
     return (
-        <div>
+        <div className="header">
             <img src={Hero} alt="hero with guy holding laptop" className="hero"/>
         
         <div className="copy"> 

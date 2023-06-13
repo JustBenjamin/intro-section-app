@@ -1,4 +1,8 @@
 
+.header {
+    margin-bottom: 2rem;
+}
+
 .hero {
     width: 100%;
 }
@@ -20,9 +24,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin: 1.5rem 0.5rem;
 
 }
 
 .clients > img {
     max-width: 20%;
+    max-height: auto;
 }
