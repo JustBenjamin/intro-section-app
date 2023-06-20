@@ -4,7 +4,12 @@
 }
 
 .hero {
-    width: 100%;
+    width: 100vw;
+    height: 350px;
+    background-image: url("../images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -31,4 +36,66 @@
 .clients > img {
     max-width: 20%;
     max-height: auto;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+
+    .main {
+        width: 50vw;
+        height: 90vh;
+        margin-right: 8em;
+
+    }
+
+    
+
+    .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+        height: 80%;
+    }
+
+    .copy > h1 {
+        font-size: 5rem;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .copy > p {
+        line-height: 2rem;
+        margin: 4em 0;
+        
+
+    }
+   
+
+    .hero {
+        background-image: url("../images/image-hero-desktop.png") ;
+        width: 30vw;
+        height: 80vh;
+    }
+
+
+
+    button {
+        border-radius: 0.8em;
+        padding: 1em 2em;
+        font-size: 18px;
+       
+    }
+ 
+    
 }

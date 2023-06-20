@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "./images/image-hero-mobile.png";
 import "./css/Header.css";
 import databiz from "./images/client-databiz.svg";
 import audiophile from "./images/client-audiophile.svg";
@@ -9,8 +8,10 @@ import maker from "./images/client-maker.svg";
 export default function Header() {
     return (
         <div className="header">
-            <img src={Hero} alt="hero with guy holding laptop" className="hero"/>
-        
+            <div className="hero">
+            </div>
+           
+        <div className="main">
         <div className="copy"> 
             <h1>Make remote work</h1>
                 <p>
@@ -19,7 +20,6 @@ export default function Header() {
                 </p>
 
                 <button>Learn more</button>
-
         </div>
          
 
@@ -28,6 +28,8 @@ export default function Header() {
                 <img src={audiophile} alt="audiophile logo"/>
                 <img src={meet} alt="meet logo"/>
                 <img src={maker} alt="maker logo"/>
+            </div>
+
             </div>
 
 

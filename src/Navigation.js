@@ -45,10 +45,10 @@ export default function Navigation() {
             </div>
         
 
-            <nav className= {!isOpen ? "close" : "" }>
+            <nav className= {!isOpen ? "close" : " " }>
                 <div className="dropdown">
                 <span onClick={handleFeatures}>Features <img src={ features ? down : up} alt="icon arrow"/></span>
-                <ul className={features ? "close" : ""}>
+                <ul className={!features ? "close" : ""}>
                     <li><img src={todo} alt="todo icon" className="dropicons"/>Todo List</li>
                     <li><img src={calendar} alt="calender icon"  className="dropicons"/> Calender</li>
                     <li><img src={reminders} alt="reminders icon"  className="dropicons"/> Reminders</li>
@@ -58,7 +58,7 @@ export default function Navigation() {
 
                 <div className="dropdown">
                 <span onClick={handleCompany}>Company <img src={ company ? down : up} alt="icon arrow"/></span>
-                <ul className= {company ? "close" : ""} >
+                <ul className= {!company ? "close" : ""} >
                     <li>History</li>
                     <li>Our Team</li>
                     <li>Blog</li>
