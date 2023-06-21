@@ -26,5 +26,12 @@ button {
     border: none;
     border-radius: 0.5em;
     padding: 0.5em 0.8em;
+    cursor: pointer;
 
+}
+
+button:hover {
+    border: 1px solid var(--AlmostBlack);
+    background-color: transparent;
+    color: var(--AlmostBlack);
 }

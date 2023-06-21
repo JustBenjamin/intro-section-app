@@ -48,9 +48,9 @@ nav > div{
 
 
 
-
 ul > li {
     list-style: none;
+    cursor: pointer;
   
 }
 
@@ -71,14 +71,104 @@ ul > li {
 
 
 @media screen and (min-width: 900px) {
+    
     .navigation {
-        padding: 1rem 2rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        width: 84px;
+        height: 27px;
+        margin-right: 2rem;
+        margin-top: 0.8rem;
+    }
+
+    .desktop > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      
+    }
+
+
+    .nobg {
+        width: 90%;
+    }
+
+    .menu-items {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    .menu-items > div{
+        cursor: pointer;
+    }
+
+
+    .menu-items > div > span:hover{
+        color: var(--AlmostBlack);
+    }
+
+    .menu-items > div:nth-child(3):hover{
+        color: var(--AlmostBlack);
+    }
+
+    .menu-items > div:nth-child(4):hover{
+        color: var(--AlmostBlack);
+    }
+
+
+
+
+
+
+   
+
+
+    .signin {
+        display: flex;
+        align-items:center;
+        margin-top: 0;
+    }
+
+    .signin > div{
+        cursor: pointer;
+        margin-top: 0.3rem;
+    }
+
+    .signin > div:hover {
+       color: var(--AlmostBlack);
     }
 
     .hamburger {
         display: none;
     }
+
+    ul {
+        position: absolute;
+        background-color: var(--AlmostWhite);
+        z-index: 5;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    ul > li {
+        line-height: 2rem;      
+    }
+
+    ul > li:hover {
+        color: var(--AlmostBlack)     
+    }
   
+
+    .register {
+        padding: 0.5rem 1rem;
+    }
 
 
 }

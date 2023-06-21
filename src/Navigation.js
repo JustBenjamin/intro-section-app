@@ -35,7 +35,7 @@ export default function Navigation() {
 
     return (
         <div className="navigation" >
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="logo"/>
 
             <div className={!isOpen ? "nobg" : "menu" }>
 
@@ -44,10 +44,12 @@ export default function Navigation() {
             <img src={burger} alt="open icon" className= {!isOpen ? "" : "close" }/>
             </div>
         
+            <div className="desktop" >
 
             <nav className= {!isOpen ? "close" : " " }>
+                <div className="menu-items">
                 <div className="dropdown">
-                <span onClick={handleFeatures}>Features <img src={ features ? down : up} alt="icon arrow"/></span>
+                <span onClick={handleFeatures}>Features <img src={ features ? up : down} alt="icon arrow"/></span>
                 <ul className={!features ? "close" : ""}>
                     <li><img src={todo} alt="todo icon" className="dropicons"/>Todo List</li>
                     <li><img src={calendar} alt="calender icon"  className="dropicons"/> Calender</li>
@@ -57,7 +59,7 @@ export default function Navigation() {
                 </div>
 
                 <div className="dropdown">
-                <span onClick={handleCompany}>Company <img src={ company ? down : up} alt="icon arrow"/></span>
+                <span onClick={handleCompany}>Company <img src={ company ? up : down} alt="icon arrow"/></span>
                 <ul className= {!company ? "close" : ""} >
                     <li>History</li>
                     <li>Our Team</li>
@@ -67,6 +69,8 @@ export default function Navigation() {
 
                 <div>Careers</div>
                 <div>About</div>
+
+                </div>
            
 
             <div className="signin">
@@ -75,6 +79,9 @@ export default function Navigation() {
             </div>
 
             </nav>
+
+
+            </div>
 
             </div>
    
